@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/proto-chat-app/static/css/main.ae5d1e15.css",
-    "main.js": "/proto-chat-app/static/js/main.150a6d9a.js",
+    "main.css": "/proto-chat-app/static/css/main.c177c09e.css",
+    "main.js": "/proto-chat-app/static/js/main.a29c25b0.js",
     "index.html": "/proto-chat-app/index.html",
-    "main.ae5d1e15.css.map": "/proto-chat-app/static/css/main.ae5d1e15.css.map",
-    "main.150a6d9a.js.map": "/proto-chat-app/static/js/main.150a6d9a.js.map"
+    "main.c177c09e.css.map": "/proto-chat-app/static/css/main.c177c09e.css.map",
+    "main.a29c25b0.js.map": "/proto-chat-app/static/js/main.a29c25b0.js.map"
   },
   "entrypoints": [
-    "static/css/main.ae5d1e15.css",
-    "static/js/main.150a6d9a.js"
+    "static/css/main.c177c09e.css",
+    "static/js/main.a29c25b0.js"
   ]
 }
