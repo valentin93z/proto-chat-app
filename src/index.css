@@ -11,14 +11,13 @@
 }
 
 
-
 /* REGISTRATION AND LOGIN */
 
 .login__page,
 .register__page {
+  width: 100%;
   height: calc(100vh - 50px);
   display: grid;
-  justify-content: center;
   align-items: center;
 }
 
@@ -26,6 +25,7 @@
 .register__form {
   width: 400px;
   padding: 20px;
+  margin: 0 auto;
 }
 
 .login__inputs,
@@ -62,7 +62,7 @@
 }
 
 .chat {
-  width: 80%;
+  max-width: 700px;
   height: 70vh;
   border: 1px solid lightgray;
   border-radius: 5px;
@@ -133,12 +133,53 @@
 }
 
 .chat__input {
-  width: 80%;
+  max-width: 700px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   margin: 0 auto;
 }
+
+
+@media screen and (max-width: 768px) {
+  
+  .login__form,
+  .register__form {
+    width: 350px;
+  }
+
+  .chat {
+    max-width: 90%;
+  }
+
+  .chat__input {
+    max-width: 90%;
+  }
+}
+
+
+@media screen and (max-width: 375px) {
+
+  .login__form,
+  .register__form {
+    width: 95%;
+  }
+  
+  .chat {
+    max-width: 95%;
+  }
+
+  .chat__message {
+    font-size: 14px;
+  }
+
+  .chat__input {
+    max-width: 95%;
+  }
+}
+
+
+
 
 
 /* LOADER */

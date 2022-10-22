@@ -36,7 +36,6 @@ const Chat = () => {
   const getMessages = () => {
     onSnapshot(collectionRef, (data) => {
       setMessages(data.docs.map((doc) => {
-        console.log(data);
         return {...doc.data(), id: doc.id}
       }))
     })

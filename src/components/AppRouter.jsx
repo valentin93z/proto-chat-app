@@ -8,7 +8,7 @@ import { auth } from "../firebaseConfig";
 const AppRouter = () => {
   const [user] = useAuthState(auth);
 
-  console.log(user);
+  // console.log(user);
 
   return user ? (
     <Routes>
