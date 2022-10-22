@@ -1,0 +1,181 @@
+* {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navlink {
+  text-decoration: none;
+  color: #1976D2;
+}
+
+
+
+/* REGISTRATION AND LOGIN */
+
+.login__page,
+.register__page {
+  height: calc(100vh - 50px);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.login__form,
+.register__form {
+  width: 400px;
+  padding: 20px;
+}
+
+.login__inputs,
+.register__inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.login__buttons,
+.register__buttons {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+
+.login__text,
+.register__text {
+  text-align: center;
+}
+
+
+/* CHAT */
+
+.chat__container {
+  width: 100%;
+  height: calc(100vh - 70px);
+  margin-top: 20px;
+}
+
+.chat {
+  width: 80%;
+  height: 70vh;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  overflow-y: auto;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.chat__messages {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.chat__message {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 20px;
+  filter:drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.15));
+}
+
+.message-wrap-right {
+  flex-direction: row-reverse;
+}
+
+.message-wrap-left {
+  flex-direction: row;
+}
+
+.chat__message-text {
+  max-width: 400px;
+  position: relative;
+  background: #fff;
+  border-radius: 5px 5px 5px 0;
+  padding: 5px;
+  
+}
+
+.message__value {
+  padding: 5px;
+}
+
+.message__time {
+  font-size: 12px;
+  float: right;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+}
+
+.triangle-left {
+  left: -12px;
+  border-bottom: 20px solid #fff;
+  border-left: 15px solid transparent;
+}
+
+.triangle-right {
+  right: -12px;
+  border-bottom: 20px solid #fff;
+  border-right: 15px solid transparent;
+}
+
+.chat__input {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 0 auto;
+}
+
+
+/* LOADER */
+
+.lds-facebook {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-facebook div {
+  display: inline-block;
+  position: absolute;
+  left: 8px;
+  width: 16px;
+  background: #1976D2;
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+.lds-facebook div:nth-child(1) {
+  left: 8px;
+  animation-delay: -0.24s;
+}
+.lds-facebook div:nth-child(2) {
+  left: 32px;
+  animation-delay: -0.12s;
+}
+.lds-facebook div:nth-child(3) {
+  left: 56px;
+  animation-delay: 0;
+}
+@keyframes lds-facebook {
+  0% {
+    top: 8px;
+    height: 64px;
+  }
+  50%, 100% {
+    top: 24px;
+    height: 32px;
+  }
+}
